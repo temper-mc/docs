@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Karla:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+
+:root {
+    --sl-font: 'Karla', sans-serif;
+    --sl-font-system: 'Karla', sans-serif;
+    --sl-font-system-mono: 'JetBrains Mono', monospace;
+}
+
+.site-title,
+.site-title span,
+.hero h1,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+/* ============================================================
+   HERO GRADIENT
+   ============================================================ */
+
+.hero h1 {
+    background: linear-gradient(
+            135deg,
+            #a385e5 0%,
+            #5d7bd5 50%,
+            #75dbcd 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ============================================================
+   DARK THEME
+   Based on your website palette
+   ============================================================ */
+
+:root {
+    /* Brand */
+    --sl-color-accent-low: #2a2244;
+    --sl-color-accent: #a385e5;
+    --sl-color-accent-high: #ebc2ff;
+
+    /* Text */
+    --sl-color-white: #eef0ff;
+
+    /* Neutrals */
+    --sl-color-gray-1: #eef0ff;
+    --sl-color-gray-2: #a8cbd8;
+    --sl-color-gray-3: #79929c;
+    --sl-color-gray-4: #4a5568;
+    --sl-color-gray-5: #23263a;
+    --sl-color-gray-6: #131628;
+    --sl-color-black: #0d0f1c;
+}
+
+/* ============================================================
+   LIGHT THEME
+   ============================================================ */
+
+:root[data-theme="light"] {
+    --sl-color-accent-low: #f4ebff;
+    --sl-color-accent: #a385e5;
+    --sl-color-accent-high: #5d7bd5;
+
+    --sl-color-white: #1a1a2e;
+
+    --sl-color-gray-1: #1a1a2e;
+    --sl-color-gray-2: #4a5568;
+    --sl-color-gray-3: #718096;
+    --sl-color-gray-4: #9ca8be;
+    --sl-color-gray-5: #e7eaf5;
+    --sl-color-gray-6: #f5f7fe;
+    --sl-color-gray-7: #fafbff;
+
+    --sl-color-black: #ffffff;
+}
+
+/* ============================================================
+   BRANDING / POLISH
+   ============================================================ */
+
+/* Softer cards */
+.card,
+.sl-link-card,
+.expressive-code,
+.starlight-aside {
+    border-radius: 1rem;
+}
+
+/* Sidebar hover */
+.sidebar-content a:hover,
+.pagination-links a:hover {
+    color: var(--sl-color-accent);
+}
+
+/* Selection */
+::selection {
+    background: rgba(163, 133, 229, 0.35);
+}
+
+/* Links */
+a {
+    transition: color 0.2s ease;
+}
+
+/* Hero buttons */
+.hero .sl-link-button {
+    border-radius: 0.9rem;
+}
+
+/* Search */
+.search-button {
+    border-radius: 0.9rem;
+}
+
+/* Code blocks */
+.expressive-code {
+    overflow: hidden;
+}
+
+/* Sidebar section titles */
+.sidebar-content summary {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+}
+
+/* Pagination */
+.pagination-links a {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Table styling */
+table {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/* Smooth transitions */
+* {
+    transition: background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+/* ============================================================
+   CUSTOM SITE TITLE
+   ============================================================ */
+
+.site-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.site-title,
+.site-title:hover,
+.site-title:focus,
+.site-title:visited {
+    text-decoration: none;
+}
+
+/* Logo container */
+.custom-site-title {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+}
+
+.site-title:hover .custom-site-title::before {
+    opacity: 0.7;
+}
+
+/* Logo image */
+.custom-site-title img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    display: block;
+}
+
+/* Main title */
+.site-title-text {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+/* Larger on desktop */
+@media (min-width: 768px) {
+    .site-title-text {
+        font-size: 1.5rem;
+    }
+}
+
+/* Gradient text */
+.site-title-text-gradient {
+    background: linear-gradient(
+            135deg,
+            var(--sl-color-accent),
+            var(--sl-color-accent-high),
+            #75dbcd
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Subtitle */
+.site-title-subtitle {
+    margin-top: 0.15rem;
+    font-size: 0.75rem;
+    color: var(--sl-color-gray-3);
+    line-height: 1;
+}
+
+/* Hide subtitle on mobile */
+@media (max-width: 639px) {
+    .site-title-subtitle {
+        display: none;
+    }
+}
