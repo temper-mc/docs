@@ -1,49 +1,38 @@
-# Starlight Starter Kit: Basics
+<div align="center">
+    <img src="https://img.shields.io/github/license/temper-mc/docs?style=for-the-badge&color=4A0D67" alt="License">
+    <img src="https://img.shields.io/github/languages/code-size/temper-mc/docs?style=for-the-badge&color=8332AC" alt="Code Size">
+    <img src="https://www.aschey.tech/tokei/github.com/temper-mc/docs?style=for-the-badge&color=caa8f5" alt="Lines of Code">
+    <img src="https://img.shields.io/github/last-commit/temper-mc/docs?style=for-the-badge&color=07BEB8" alt="Last Commit">
+    <a  href="https://discord.gg/6QPZgUy4sA">
+    <img alt="Discord" src="https://img.shields.io/discord/1469329170055037087?style=for-the-badge&logo=discord&logoColor=73EEDC&color=73EEDC&link=https%3A%2F%2Fdiscord.gg%2F6QPZgUy4sA">
+    </a>
+</div>
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+## About
 
-```
-bun create astro@latest -- --template starlight
-```
+This repository contains the source code for the Temper documentation.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+<img src="https://github.com/temper-mc/temper/blob/master/assets/README/in_game.png?raw=true" alt="In-game screenshot">
 
-## 🚀 Project Structure
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+## Project Links
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+* **Official Website:** **[temper-mc.com](https://www.temper-mc.com)**
+* **Discord Community:** **[Join our Discord](https://discord.gg/6QPZgUy4sA)**
+* **GitHub Repository:** **[temper-mc/temper](https://github.com/temper-mc/temper)**
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## License
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+FerrumC was licensed under the MIT License, but Temper has moved to the GNU General Public License v3.0 (GPL-3.0) to
+better align with our values of open source and community involvement. The GPL-3.0 is a copyleft license that requires
+any derivative works to also be licensed under the same terms, which we believe will help to ensure that Temper remains
+free and open for everyone to use and contribute to.
 
-Static assets, like favicons, can be placed in the `public/` directory.
+Due to this, commits to FerrumC and prior to 14/02/2026 are licensed under the MIT License, while commits to Temper and
+after 14/02/2026 are licensed under the GPL-3.0. This is not a dual license, rather a change in license that occurred at
+a specific point in time.
 
-## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+## Stats
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+![Alt](https://repobeats.axiom.co/api/embed/22e03e8b8992dd6c9adf290c0d65d0c50687a917.svg "Repobeats analytics image")
